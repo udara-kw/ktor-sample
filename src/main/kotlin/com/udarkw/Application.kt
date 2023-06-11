@@ -11,6 +11,7 @@ fun main() {
 }
 
 fun Application.module() {
+//    Uncomment Security, HTTP and monitoring if needed
 //    configureSecurity()
 //    configureHTTP()
 //    configureMonitoring()
