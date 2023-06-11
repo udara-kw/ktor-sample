@@ -1,0 +1,10 @@
+GET http://{{host}}:{{port}}/order
+Content-Type: application/json
+
+###
+GET http://{{host}}:{{port}}/order/2020-04-06-01
+Content-Type: application/json
+
+###
+GET http://{{host}}:{{port}}/order/2020-04-06-01/total
+Content-Type: application/json

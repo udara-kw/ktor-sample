@@ -1,0 +1,51 @@
+POST http://{{host}}:{{port}}/customer
+Content-Type: application/json
+
+{
+  "id": "100",
+  "firstName": "Jane",
+  "lastName": "Smith",
+  "email": "jane.smith@company.com"
+}
+
+
+###
+POST http://{{host}}:{{port}}/customer
+Content-Type: application/json
+
+{
+  "id": "200",
+  "firstName": "John",
+  "lastName": "Smith",
+  "email": "john.smith@company.com"
+}
+
+###
+POST http://{{host}}:{{port}}/customer
+Content-Type: application/json
+
+{
+  "id": "300",
+  "firstName": "Mary",
+  "lastName": "Smith",
+  "email": "mary.smith@company.com"
+}
+
+
+###
+GET http://{{host}}:{{port}}/customer
+Accept: application/json
+
+###
+GET http://{{host}}:{{port}}/customer/200
+Accept: application/json
+
+###
+GET http://{{host}}:{{port}}/customer/500
+Accept: application/json
+
+###
+DELETE http://{{host}}:{{port}}/customer/100
+
+###
+DELETE http://{{host}}:{{port}}/customer/500
